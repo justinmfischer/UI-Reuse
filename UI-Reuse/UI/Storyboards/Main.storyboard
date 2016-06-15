@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ODa-sN-rwE">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="AvenirNextLTProBold.otf">
+            <string>AvenirNextLTPro-Bold</string>
+        </mutableArray>
+        <mutableArray key="AvenirNextLTProRegular.otf">
+            <string>AvenirNextLTPro-Regular</string>
+            <string>AvenirNextLTPro-Regular</string>
+        </mutableArray>
+        <mutableArray key="AvenirNextLTProThin.otf">
+            <string>AvenirNextLTPro-Thin</string>
+        </mutableArray>
+        <mutableArray key="FontAwesome.otf">
+            <string>FontAwesome</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="shc-Yl-WPm">
+            <objects>
+                <navigationController id="ODa-sN-rwE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nPn-jZ-zcZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="qds-Gy-G5B" kind="relationship" relationship="rootViewController" id="dTu-ta-LZT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NKD-Oh-2ao" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-301" y="164"/>
+        </scene>
+        <!--UI-Reuse-->
+        <scene sceneID="pOM-oe-6Vn">
+            <objects>
+                <viewController storyboardIdentifier="main" id="qds-Gy-G5B" customClass="MainVC" customModule="UI_Reuse" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o6Z-Rt-fOG"/>
+                        <viewControllerLayoutGuide type="bottom" id="JUd-Ym-FGZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gw6-Cb-hhH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmK-MD-chu" customClass="Button" customModule="UI_Reuse" customModuleProvider="target">
+                                <rect key="frame" x="20" y="520" width="560" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Zyp-AY-WRq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="23"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="kpV-dJ-SyG" kind="show" id="bJb-GJ-y3a"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hot-Air-Balloon" translatesAutoresizingMaskIntoConstraints="NO" id="49R-ju-XMX" customClass="Image" customModule="UI_Reuse" customModuleProvider="target">
+                                <rect key="frame" x="20" y="124" width="560" height="376"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BrandX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1G-ck-IkS" customClass="Label" customModule="UI_Reuse" customModuleProvider="target">
+                                <rect key="frame" x="40" y="451" width="520" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="23"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iaq-NO-39G">
+                                <rect key="frame" x="20" y="72" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="J82-Wa-VhM"/>
+                                    <constraint firstAttribute="width" constant="44" id="X6t-Hu-lr3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="30"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ori-Xw-IkK" kind="presentation" id="iHK-IA-Rsi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Iaq-NO-39G" firstAttribute="leading" secondItem="49R-ju-XMX" secondAttribute="leading" id="2NZ-7P-92R"/>
+                            <constraint firstItem="49R-ju-XMX" firstAttribute="top" secondItem="Iaq-NO-39G" secondAttribute="bottom" constant="8" symbolic="YES" id="4Tf-JF-jGt"/>
+                            <constraint firstItem="49R-ju-XMX" firstAttribute="leading" secondItem="vmK-MD-chu" secondAttribute="leading" id="9Na-k4-Dcz"/>
+                            <constraint firstItem="M1G-ck-IkS" firstAttribute="bottom" secondItem="49R-ju-XMX" secondAttribute="bottom" constant="-20" id="Jc8-dR-sq1"/>
+                            <constraint firstItem="vmK-MD-chu" firstAttribute="top" secondItem="49R-ju-XMX" secondAttribute="bottom" constant="20" id="KuK-Ad-tat"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="M1G-ck-IkS" secondAttribute="trailing" constant="20" id="L8K-ku-XOj"/>
+                            <constraint firstItem="M1G-ck-IkS" firstAttribute="leading" secondItem="gw6-Cb-hhH" secondAttribute="leadingMargin" constant="20" id="Tsm-om-fdB"/>
+                            <constraint firstItem="Iaq-NO-39G" firstAttribute="top" secondItem="o6Z-Rt-fOG" secondAttribute="bottom" constant="8" symbolic="YES" id="WUF-wU-Ae0"/>
+                            <constraint firstAttribute="bottom" secondItem="vmK-MD-chu" secondAttribute="bottom" constant="20" symbolic="YES" id="gyL-Ft-3bD"/>
+                            <constraint firstItem="49R-ju-XMX" firstAttribute="trailing" secondItem="vmK-MD-chu" secondAttribute="trailing" id="i6e-If-tfZ"/>
+                            <constraint firstItem="Iaq-NO-39G" firstAttribute="leading" secondItem="gw6-Cb-hhH" secondAttribute="leadingMargin" id="juV-O5-WLD"/>
+                            <constraint firstItem="49R-ju-XMX" firstAttribute="trailing" secondItem="gw6-Cb-hhH" secondAttribute="trailingMargin" id="sOo-Q1-MjH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="UI-Reuse" id="x78-0e-FGQ">
+                        <barButtonItem key="backBarButtonItem" title=" " id="ypi-Pc-PdK"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qZ1-JV-ICr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="393" y="164"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="3y7-gj-nb3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" id="ori-Xw-IkK" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lgS-oa-AEa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828.5" y="-189"/>
+        </scene>
+        <!--Content-->
+        <scene sceneID="8nZ-6e-Wwp">
+            <objects>
+                <viewController storyboardIdentifier="Details" id="kpV-dJ-SyG" customClass="DetailsVC" customModule="UI_Reuse" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M8C-JW-AhS"/>
+                        <viewControllerLayoutGuide type="bottom" id="UaF-Sw-15o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jxF-ZW-FT0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0KQ-1B-fDm">
+                                <rect key="frame" x="20" y="550" width="560" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="TjP-cP-R4H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextLTPro-Thin" family="Avenir Next LT Pro" pointSize="23"/>
+                                <state key="normal" title="Content from Scene Dock"/>
+                                <connections>
+                                    <action selector="tapAddContent:" destination="kpV-dJ-SyG" eventType="touchUpInside" id="pbD-J9-xDs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opY-Yt-4sY">
+                                <rect key="frame" x="20" y="342" width="560" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="xtu-KS-uAH"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+                                <fontDescription key="fontDescription" name="AvenirNextLTPro-Regular" family="Avenir Next LT Pro" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="opY-Yt-4sY" secondAttribute="trailing" id="JaU-xM-uAo"/>
+                            <constraint firstItem="0KQ-1B-fDm" firstAttribute="leading" secondItem="jxF-ZW-FT0" secondAttribute="leadingMargin" id="Sms-fR-drl"/>
+                            <constraint firstItem="0KQ-1B-fDm" firstAttribute="top" secondItem="opY-Yt-4sY" secondAttribute="bottom" constant="8" id="W2V-6Y-UEy"/>
+                            <constraint firstItem="UaF-Sw-15o" firstAttribute="top" secondItem="0KQ-1B-fDm" secondAttribute="bottom" constant="20" id="gjr-qK-4wp"/>
+                            <constraint firstItem="opY-Yt-4sY" firstAttribute="leading" secondItem="jxF-ZW-FT0" secondAttribute="leadingMargin" id="iTt-5p-y2h"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0KQ-1B-fDm" secondAttribute="trailing" id="pOg-xZ-Gdl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Content" id="9Y1-N3-ogy"/>
+                    <connections>
+                        <outlet property="CTA" destination="0KQ-1B-fDm" id="aJz-ER-naM"/>
+                        <outlet property="content" destination="Sjf-Ph-OaA" id="u0j-nn-rc1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BCU-EL-PZW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="Sjf-Ph-OaA">
+                    <rect key="frame" x="0.0" y="0.0" width="428" height="176"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WkZ-rr-UMS" customClass="Bubble" customModule="UI_Reuse" customModuleProvider="target">
+                            <rect key="frame" x="8" y="8" width="412" height="160"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppd-z5-wU5">
+                                    <rect key="frame" x="324" y="126" width="80" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="JHI-2l-iTQ"/>
+                                        <constraint firstAttribute="width" constant="80" id="SUq-gc-5Ga"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="AvenirNextLTPro-Bold" family="Avenir Next LT Pro" pointSize="15"/>
+                                    <state key="normal" title="Remove">
+                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="tapRemoveContent:" destination="kpV-dJ-SyG" eventType="touchUpInside" id="DPZ-9x-yv5"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlA-fe-Rir">
+                                    <rect key="frame" x="8" y="8" width="396" height="110"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="110" id="Ngs-CZ-slP"/>
+                                    </constraints>
+                                    <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+                                    <fontDescription key="fontDescription" name="AvenirNextLTPro-Regular" family="Avenir Next LT Pro" pointSize="15"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="tlA-fe-Rir" firstAttribute="leading" secondItem="WkZ-rr-UMS" secondAttribute="leading" constant="8" id="7Ks-20-sAP"/>
+                                <constraint firstAttribute="trailing" secondItem="ppd-z5-wU5" secondAttribute="trailing" constant="8" id="8Yx-fa-Cg0"/>
+                                <constraint firstAttribute="height" constant="160" id="UFk-uF-SXX"/>
+                                <constraint firstItem="ppd-z5-wU5" firstAttribute="top" secondItem="tlA-fe-Rir" secondAttribute="bottom" constant="8" id="e8d-jJ-uZe"/>
+                                <constraint firstAttribute="trailing" secondItem="tlA-fe-Rir" secondAttribute="trailing" constant="8" id="qqx-kB-gFr"/>
+                                <constraint firstItem="tlA-fe-Rir" firstAttribute="top" secondItem="WkZ-rr-UMS" secondAttribute="top" constant="8" id="y9q-9Y-CeN"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                    <color key="value" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="WkZ-rr-UMS" firstAttribute="top" secondItem="Sjf-Ph-OaA" secondAttribute="top" constant="8" id="ERl-yo-pg1"/>
+                        <constraint firstItem="WkZ-rr-UMS" firstAttribute="centerY" secondItem="Sjf-Ph-OaA" secondAttribute="centerY" id="Fio-2W-dc8"/>
+                        <constraint firstAttribute="trailing" secondItem="WkZ-rr-UMS" secondAttribute="trailing" constant="8" id="Nr8-TE-ASl"/>
+                        <constraint firstItem="WkZ-rr-UMS" firstAttribute="centerY" secondItem="Sjf-Ph-OaA" secondAttribute="centerY" id="mao-ms-qbw"/>
+                        <constraint firstItem="WkZ-rr-UMS" firstAttribute="leading" secondItem="Sjf-Ph-OaA" secondAttribute="leading" constant="8" id="yXN-vB-g62"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="ERl-yo-pg1"/>
+                            <exclude reference="mao-ms-qbw"/>
+                        </mask>
+                    </variation>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="1104" y="177"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hot-Air-Balloon" width="960" height="540"/>
+    </resources>
+</document>

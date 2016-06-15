@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O3R-CL-Z2V">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="AvenirNextLTProRegular.otf">
+            <string>AvenirNextLTPro-Regular</string>
+        </mutableArray>
+        <mutableArray key="AvenirNextLTProThin.otf">
+            <string>AvenirNextLTPro-Thin</string>
+        </mutableArray>
+        <mutableArray key="FontAwesome.otf">
+            <string>FontAwesome</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Settings-->
+        <scene sceneID="GSD-v5-tgS">
+            <objects>
+                <viewController storyboardIdentifier="settings" title="Settings" id="O3R-CL-Z2V" customClass="SettingsVC" customModule="UI_Reuse" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="72u-Oa-xbn"/>
+                        <viewControllerLayoutGuide type="bottom" id="BMT-XW-Dlr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rlb-gh-hRu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5t-Si-q9e">
+                                <rect key="frame" x="20" y="20" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="Ax2-3i-BBg"/>
+                                    <constraint firstAttribute="height" constant="44" id="HAZ-Yt-5Fh"/>
+                                    <constraint firstAttribute="width" constant="44" id="N53-DE-pap"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="qYA-3s-WAh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="30"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4QD-xh-fRo" kind="unwind" identifier="unwindToMain" unwindAction="unwindToMainVC:" id="hbU-Oz-d4C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnw-Gg-HEA">
+                                <rect key="frame" x="20" y="562" width="560" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="npg-3C-dCM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextLTPro-Thin" family="Avenir Next LT Pro" pointSize="23"/>
+                                <state key="normal" title="Content from ViewController">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapAddContent:" destination="O3R-CL-Z2V" eventType="touchUpInside" id="cXD-Dy-40w"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFi-ia-vZs">
+                                <rect key="frame" x="20" y="354" width="560" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="wwJ-er-UKj"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+                                <fontDescription key="fontDescription" name="AvenirNextLTPro-Regular" family="Avenir Next LT Pro" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="BMT-XW-Dlr" firstAttribute="top" secondItem="dnw-Gg-HEA" secondAttribute="bottom" constant="8" id="2T8-Aj-Xgg"/>
+                            <constraint firstItem="dnw-Gg-HEA" firstAttribute="leading" secondItem="Rlb-gh-hRu" secondAttribute="leadingMargin" id="8le-MY-fYH"/>
+                            <constraint firstItem="E5t-Si-q9e" firstAttribute="leading" secondItem="Rlb-gh-hRu" secondAttribute="leadingMargin" id="Bzt-Lx-fMi"/>
+                            <constraint firstItem="dnw-Gg-HEA" firstAttribute="trailing" secondItem="Rlb-gh-hRu" secondAttribute="trailingMargin" id="EVq-LB-l3e"/>
+                            <constraint firstItem="TFi-ia-vZs" firstAttribute="leading" secondItem="Rlb-gh-hRu" secondAttribute="leadingMargin" id="Pg8-RG-BiL"/>
+                            <constraint firstItem="dnw-Gg-HEA" firstAttribute="top" secondItem="TFi-ia-vZs" secondAttribute="bottom" constant="8" id="bDf-Ui-zOL"/>
+                            <constraint firstItem="E5t-Si-q9e" firstAttribute="top" secondItem="72u-Oa-xbn" secondAttribute="bottom" id="imA-gt-SBo"/>
+                            <constraint firstItem="TFi-ia-vZs" firstAttribute="trailing" secondItem="Rlb-gh-hRu" secondAttribute="trailingMargin" id="mP8-x4-P1P"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CTA" destination="dnw-Gg-HEA" id="QNh-qO-eer"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jnk-RT-D3O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="985" y="-571"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="PMD-zf-awL">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="unwind-to-main" storyboardName="Main" id="6gZ-BY-8v6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OJU-ff-1hw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="4QD-xh-fRo" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="716" y="-954"/>
+        </scene>
+    </scenes>
+</document>

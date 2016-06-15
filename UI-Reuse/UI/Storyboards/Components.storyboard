@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9bZ-do-gzk">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="AvenirNextLTProBold.otf">
+            <string>AvenirNextLTPro-Bold</string>
+        </mutableArray>
+        <mutableArray key="AvenirNextLTProRegular.otf">
+            <string>AvenirNextLTPro-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Card-->
+        <scene sceneID="vBv-CQ-k8a">
+            <objects>
+                <viewController storyboardIdentifier="card" id="9bZ-do-gzk" customClass="Card" customModule="UI_Reuse" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zWh-0D-Spk"/>
+                        <viewControllerLayoutGuide type="bottom" id="fFA-NX-bvz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ibi-GL-bck">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vlE-Wm-vCZ">
+                                <rect key="frame" x="20" y="220" width="560" height="160"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXA-PM-8ZC">
+                                        <rect key="frame" x="472" y="126" width="80" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="S4V-6c-OMc"/>
+                                            <constraint firstAttribute="width" constant="80" id="nEF-9Q-pVY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNextLTPro-Bold" family="Avenir Next LT Pro" pointSize="15"/>
+                                        <state key="normal" title="Remove">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="close:" destination="9bZ-do-gzk" eventType="touchUpInside" id="PF4-vT-h3t"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSE-Om-26p">
+                                        <rect key="frame" x="8" y="8" width="544" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="110" id="Oc8-8y-3LE"/>
+                                        </constraints>
+                                        <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+                                        <fontDescription key="fontDescription" name="AvenirNextLTPro-Regular" family="Avenir Next LT Pro" pointSize="15"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="fSE-Om-26p" secondAttribute="trailing" constant="8" id="61q-kc-A0V"/>
+                                    <constraint firstItem="fSE-Om-26p" firstAttribute="top" secondItem="vlE-Wm-vCZ" secondAttribute="top" constant="8" id="FSs-aT-Br0"/>
+                                    <constraint firstAttribute="trailing" secondItem="AXA-PM-8ZC" secondAttribute="trailing" constant="8" id="FdC-Lc-ngF"/>
+                                    <constraint firstAttribute="height" constant="160" id="UCs-Ne-rj3"/>
+                                    <constraint firstItem="fSE-Om-26p" firstAttribute="leading" secondItem="vlE-Wm-vCZ" secondAttribute="leading" constant="8" id="UWt-cT-up9"/>
+                                    <constraint firstItem="AXA-PM-8ZC" firstAttribute="top" secondItem="fSE-Om-26p" secondAttribute="bottom" constant="8" id="r41-YT-oWh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vlE-Wm-vCZ" firstAttribute="leading" secondItem="Ibi-GL-bck" secondAttribute="leadingMargin" id="D1b-ZJ-XFN"/>
+                            <constraint firstItem="vlE-Wm-vCZ" firstAttribute="centerY" secondItem="Ibi-GL-bck" secondAttribute="centerY" id="KPx-qs-PkZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vlE-Wm-vCZ" secondAttribute="trailing" id="n3e-6c-5DB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vrg-Id-6UN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="618" y="594"/>
+        </scene>
+    </scenes>
+</document>
